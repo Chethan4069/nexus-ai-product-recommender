@@ -1,0 +1,24 @@
+# Ignore Virtual Environments
+backend/venv/
+.env/
+venv/
+env/
+
+# Ignore Environment Variables (API Keys, Passwords)
+backend/.env
+.env
+.env.local
+
+# Ignore Local Database files
+backend/sql_app.db
+*.db
+*.sqlite3
+
+# Ignore Python specific files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

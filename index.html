@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Problem Solver | AI Product Recommendations</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar for History -->
+        <aside class="sidebar">
+            <button class="new-chat-btn" onclick="startNewChat()">
+                <i class='bx bx-plus'></i> New Conversation
+            </button>
+            
+            <div class="history-section">
+                <span>Recent Problems Solved</span>
+                <div class="history-list" id="history-list">
+                    <!-- History items will be injected here -->
+                </div>
+            </div>
+            
+            <div class="sidebar-bottom">
+                <div class="user-profile">
+                    <i class='bx bx-user-circle'></i> User Profile
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <h2>Nexus Problem Solver AI</h2>
+                <div class="header-status">Powered by ML & NLP</div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Welcome Message -->
+                <div class="msg bot-msg">
+                    <div class="avatar"><i class='bx bx-brain'></i></div>
+                    <div class="content">
+                        Hello! I am Nexus AI. I don't just search for products; I find solutions to your real-world problems. 
+                        <br><br>
+                        Tell me about an issue you are facing or a goal you are trying to achieve. For example:
+                        <ul>
+                            <li>"I want to start a podcast but I have a lot of background noise in my room."</li>
+                            <li>"I'm working from home and my back hurts after 5 hours."</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-box">
+                    <textarea id="chat-input" placeholder="Describe the issue you are facing..." onkeypress="handleEnter(event)"></textarea>
+                    <button class="send-btn" onclick="sendMessage()">
+                        <i class='bx bx-send'></i>
+                    </button>
+                </div>
+                <div class="disclaimer">
+                    Nexus AI analyzes your problem using natural language processing to recommend the optimal solution.
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
