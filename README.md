@@ -1,6 +1,6 @@
 # Nexus AI: Autonomous Problem-Solving Engine 🧠
 
-![Nexus AI Demo Banner](https://loremflickr.com/1200/400/technology)
+![Nexus AI Demo Banner](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1200&h=400)
 
 **Nexus AI** is a next-generation Generative NLP problem solver and autonomous e-commerce recommendation engine. Instead of searching by generic product keywords, users describe real-world problems in natural language (e.g., *"My neck hurts from looking down at my screen all day"*). 
 
